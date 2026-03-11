@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Banking Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Simple Banking System</h1>
+
+<input type="text" id="name" placeholder="Enter Name">
+<input type="number" id="balance" placeholder="Initial Balance">
+
+<button onclick="createAccount()">Create Account</button>
+
+<br><br>
+
+<input type="number" id="depositAmount" placeholder="Deposit Amount">
+<button onclick="deposit()">Deposit</button>
+
+<br><br>
+
+<input type="number" id="withdrawAmount" placeholder="Withdraw Amount">
+<button onclick="withdraw()">Withdraw</button>
+
+<br><br>
+
+<button onclick="checkBalance()">Check Balance</button>
+
+<h2 id="output"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
