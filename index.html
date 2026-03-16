@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Banking Application</title>
+<title>Banking Dashboard</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<h1>Simple Banking System</h1>
+<div class="container">
 
+<h1>💳 Smart Banking System</h1>
+
+<div class="card">
+
+<h2>Create Account</h2>
 <input type="text" id="name" placeholder="Enter Name">
 <input type="number" id="balance" placeholder="Initial Balance">
-
 <button onclick="createAccount()">Create Account</button>
 
-<br><br>
+</div>
 
+<div class="card">
+
+<h2>Deposit Money</h2>
 <input type="number" id="depositAmount" placeholder="Deposit Amount">
 <button onclick="deposit()">Deposit</button>
 
-<br><br>
+</div>
 
+<div class="card">
+
+<h2>Withdraw Money</h2>
 <input type="number" id="withdrawAmount" placeholder="Withdraw Amount">
 <button onclick="withdraw()">Withdraw</button>
 
-<br><br>
+</div>
 
+<div class="card">
+
+<h2>Account Balance</h2>
 <button onclick="checkBalance()">Check Balance</button>
 
+</div>
+
+<div class="result">
 <h2 id="output"></h2>
+</div>
+
+</div>
 
 <script src="script.js"></script>
 
