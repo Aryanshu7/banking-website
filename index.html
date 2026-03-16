@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Banking Dashboard</title>
+<title>Smart Banking Dashboard</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container">
+<div class="app">
 
-<h1>💳 Smart Banking System</h1>
+<header>
+<h1>🏦 Smart Bank</h1>
+<p>Manage your account easily</p>
+</header>
+
+<div class="dashboard">
 
 <div class="card">
-
 <h2>Create Account</h2>
 <input type="text" id="name" placeholder="Enter Name">
 <input type="number" id="balance" placeholder="Initial Balance">
-<button onclick="createAccount()">Create Account</button>
-
+<button onclick="createAccount()">Create</button>
 </div>
 
 <div class="card">
-
-<h2>Deposit Money</h2>
-<input type="number" id="depositAmount" placeholder="Deposit Amount">
+<h2>Deposit</h2>
+<input type="number" id="depositAmount" placeholder="Amount">
 <button onclick="deposit()">Deposit</button>
-
 </div>
 
 <div class="card">
-
-<h2>Withdraw Money</h2>
-<input type="number" id="withdrawAmount" placeholder="Withdraw Amount">
+<h2>Withdraw</h2>
+<input type="number" id="withdrawAmount" placeholder="Amount">
 <button onclick="withdraw()">Withdraw</button>
-
 </div>
 
-<div class="card">
-
-<h2>Account Balance</h2>
-<button onclick="checkBalance()">Check Balance</button>
-
+<div class="card balance">
+<h2>Check Balance</h2>
+<button onclick="checkBalance()">Show Balance</button>
+<h3 id="output"></h3>
 </div>
 
-<div class="result">
-<h2 id="output"></h2>
 </div>
 
 </div>
